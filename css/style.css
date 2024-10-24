@@ -1,8 +1,6 @@
 @charset "UTF-8";
 
-/* Inicio do Fundo Animado */
 body {
-    margin: auto;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     overflow: auto;
     background: linear-gradient(315deg, rgba(101, 0, 94, 1) 3%, rgba(60, 132, 206, 1) 38%, rgb(51, 238, 48) 68%, rgba(255, 25, 25, 1) 98%);
@@ -73,241 +71,23 @@ body {
     }
 }
 
-/*Fim do Fundo Animado*/
-
-/*Inicio da Letra Digitando*/
 h1 {
-    font-family: Luminari;
-    width: 27vw;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+    font-family: "Black Ops One", system-ui;
+    width: 25vw;
+    animation: typing 2s steps(22), blink 2s step-end infinite ;
     white-space: nowrap;
     overflow: hidden;
-    border-right: 3px solid;
     color: antiquewhite;
 }
 
 @keyframes typing {
     from {
-        width: 0;
+        width: 0vw;
     }
-}
-
-@keyframes blink {
-    50% {
-        border-color: transparent;
-    }
-}
-
-/*Fim da Letra Digitando*/
-
-h2 {
-    font-family: Luminari;
-    letter-spacing: 3px;
-    color: Black;
-
-}
-
-.cabecalho {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: larger;
-    margin-top: 5vh;
-}
-
-/* Inicio do Foto */
-figure.fotoperfil {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-figure.fotoperfil img {
-    width: 20%;
-    border-radius: 50%;
-}
-
-/* Fim do Foto*/
-
-.sobre {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    margin-left: 2vh;
-    font-size: larger;
-}
-
-.habilidades {
-    margin-top: 30vh;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    margin-left: 2vh;
-    font-size: larger;
-}
-
-.apps {
-    margin-top: 30vh;
-    display: flex;
-    margin-left: 2vh;
-    font-size: larger;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.ferramentas {
-    font-size: larger;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 5vh;
-    display: flex;
-    margin-left: 2vh;
-}
-
-.f1 {
-    float: left;
-    margin-top: 10vh;
-    color: white;
-}
-
-.f2 {
-    float: left;
-    margin-top: 10vh;
-    color: white;
-}
-
-.f3 {
-    float: left;
-    margin-top: 10vh;
-    color: white;
-}
-
-.f4 {
-    float: left;
-    margin-top: 10vh;
-    color: white;
-}
-
-.t1 {
-    margin-left: 15px;
-}
-
-.t2 {
-    margin-left: 35px;
-}
-
-.t3 {
-    margin-left: 30px;
-}
-
-.t4 {
-    margin-left: 50px;
-}
-
-.projetos {
-    margin-top: 20vh;
-    margin-bottom: 5vh;
-    margin-left: 2vh;
-    font-size: larger;
-    justify-content: center;
-    align-items: center;
-}
-
-figure.foto-legenda {
-    position: relative;
-    width: 350px;
-    height: 437px;
-}
-
-figure.foto-legenda img {
-    width: 350px;
-}
-
-figure.foto-legenda figcaption {
-    position: absolute;
-    top: 0px;
-    background-color: rgba(0, 0, 0, 0.7);
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    transition: opacity 1s;
-    opacity: 0;
-}
-
-figure.foto-legenda:hover figcaption {
-    opacity: 1;
-}
-
-figure.foto-legenda2 {
-    position: relative;
-    width: 600px;
-    height: 437px;
-}
-
-figure.foto-legenda2 img {
-    width: 100%;
-    height: 100%;
-}
-
-figure.foto-legenda2 figcaption {
-    position: absolute;
-    top: 0px;
-    background-color: rgba(0, 0, 0, 0.7);
-    width: 600px;
-    height: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    transition: opacity 1s;
-    opacity: 0;
-}
-
-figure.foto-legenda2:hover figcaption {
-    opacity: 1;
-}
-
-h4 {
-    color: white;
-    font-size: 3vh;
-}
-
-.projeto1 {
-    float: left;
-    width: 50%;
-    display: table;
-}
-
-.projeto2 {
-    float: left;
-    width: 50%;
-    display: table;
-}
-
-
-.insta {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .insta a i {
-    font-size: 3em;
-    color: black;
-    transition: color 0.3s ease
-}
-
-.yt {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.yt a i {
-    font-size: 3em;
+    font-size: 3vw;
     color: black;
     transition: color 0.3s ease
 }
@@ -316,69 +96,113 @@ h4 {
     color: #d9057d;
 }
 
+.yt a i {
+    font-size: 3vw;
+    color: black;
+    transition: color 0.3s ease
+}
+
 .yt a i:hover {
     color: red;
 }
 
-@media only screen and (max-width: 680px) {
-    h2 {
-        font-size: medium;
-    }
-
-    .ferramentas img {
-        width: 80%;
-        height: auto;
-        font-size: 16px;
-        
-    }
-
-    h3 {
-        font-size: medium;
-    }
-
-    .projetos{
-        display: table;
-    }
-
-    figure.foto-legenda img{
-        width: 70%;
-        height: 70%;
-    }
-    
-    figure.foto-legenda figcaption {
-        width: 70%;
-        height: 70%;
-    }
-
-    h4{
-        font-size: 2vh;
-    }
-
-    figure.foto-legenda2 img{
-        width: 70%;
-        height: 70%;
-    }
-    
-    figure.foto-legenda2 figcaption {
-        width: 70%;
-        height: 70%;
-    }
-
-    h4{
-        font-size: 2vh;
-    }
-
-    .insta{
-        font-size: 10px;
-    }
-
-    .yt{
-        font-size: 10px;
-    }
+.font{
+    font-family:"Roboto Slab", serif;
 }
 
-@media only screen and (max-width: 1299px) {
-    .cabecalho {
+/* Tamanho da imagem para telas grandes */
+@media (min-width: 1250px) {
+    .responsive-img {
+      width: 30%;
+    }
+
+    .apps{
+        width: 10vw;
+    }
+  }
+  
+  /* Tamanho da imagem para telas médias */
+  @media (max-width: 1249px) and (min-width: 768px) {
+    .responsive-img {
+      width: 30%;
+    }
+
+    .apps{
+        width: 10vw;
+    }
+
+    h1{
         display: none;
     }
-}
+
+    .insta a i{
+        font-size: 4vw;
+    }
+
+    .yt a i{
+        font-size: 4vw;
+    }
+  }
+  
+  /* Tamanho da imagem para telas pequenas */
+  @media (max-width: 767px) {
+    .responsive-img {
+      width: 30%;
+    }
+
+    .apps{
+        width: 10vw;
+    }
+
+    h3{
+        font-size: medium;
+    }
+
+    h1{
+        display: none;
+    }
+
+    .insta a i{
+        font-size: 5vw;
+    }
+
+    .yt a i{
+        font-size: 5vw;
+    }
+
+    h2{
+        font-size: 3vh;
+    }
+  }
+  
+  /* Tamanho da imagem para telas muito pequenas */
+  @media (max-width: 576px) {
+    .responsive-img {
+      width: 30%;
+    }
+
+    .apps{
+        width: 10vw;
+    }
+
+    h3{
+        font-size: 2vh;
+    }
+
+    h1{
+        display: none;
+    }
+
+    .insta a i{
+        font-size: 6vw;
+    }
+
+    .yt a i{
+        font-size: 6vw;
+    }
+
+    h2{
+        font-size: 2vh;
+    }
+  }
+  
